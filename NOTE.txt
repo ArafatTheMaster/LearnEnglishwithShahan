@@ -1,0 +1,3 @@
+Adding More Users:
+Admins: Simply add new entries with userType: "admin" to the validCredentials array.
+Free Users: Add new entries with userType: "free" to the array.

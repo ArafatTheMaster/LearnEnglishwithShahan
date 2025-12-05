@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>
+	    Arafat : All Resources & Tools
+	</title>
+
+	<meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+	<meta name = "description" content = "Learning about Meta Tags." />
+	<meta name = "author" content = "MD ARAFAT" />
+	<meta http-equiv = "Content-Type" content = "text/html; charset = Big5" />
+
+	<title>Login Form</title>
+	<style>
+		/* Your CSS styles */
+		/* ... */
+		#loggedInSection {
+			font-family: Arial, sans-serif;
+			display: none; /* Hide initially */
+            padding: 40px;
+		}
+
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover, 
+		input:-webkit-autofill:focus, 
+		input:-webkit-autofill:active{
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #ffffff;
+			transition: background-color 5000s ease-in-out 0s;
+			box-shadow: inset 0 0 20px 20px #23232329;
+		}
+	</style>
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="topbar.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="Scroll-up/style.css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="eng.css" media="all" />
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9"></script> <!-- SweetAlert2 library -->
+</head>
+<body>
+	<section id="backgroundSection">
+		<div class="login-box">
+			<form id="loginForm" onsubmit="validateForm(event)">
+				<h2>Login</h2>
+				<div class="input-box">
+					<span class="icon">
+						<ion-icon name="mail-outline"></ion-icon>
+					</span>
+					<input type="text" id="username" name="username" required>
+					<label>Email</label>
+				</div>
+
+				<div class="input-box">
+					<span class="icon">
+						<ion-icon name="lock-closed-outline"></ion-icon>
+					</span>
+					<input type="password" id="password" name="password" required>
+					<label>Password</label>
+				</div>
+
+				<div class="remember-forgot">
+					<label>
+						<input type="checkbox" id="showPasswordCheckbox" onchange="togglePasswordVisibility()">
+						Show Password
+					</label>
+					<a href="forgot-password/index.html" target="_blank">Forgot Password?</a>
+				</div>
+
+				<button type="submit" class="submit"><b>Login</b></button>
+
+				<div class="register-link">
+					<p>Don't have an account? 
+						<a href="create-account/index.html" target="_blank">Register</a>
+					</p>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<div id="loggedInSection">
+	<!-- ============================================================================================================ -->
+    <!-- ============================================================================================================ -->
+        <div id="progress">
+            <span id="progress-value">&#x1F815;</span>
+        </div>
+        
+		<div class="unique-top-bar">
+			<ul>
+				<li><a class="unique-fb" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a class="unique-yt" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+				<li><a class="unique-fg" href="#"><i class="fa-solid fa-users"></i></a></li>
+				<li><a class="unique-cl" href="tel:+8801786945337"><i class="fa-solid fa-phone"></i></a></li>
+			</ul>
+			<button type="button" class="unique-logout" onclick="logout()"><b><h4><i class="fa-solid fa-right-from-bracket"></i> Log Out</h4></b></button>
+		</div>
+
+
+
+		<!-- Add your other content here -->
+        
+
+
+    <div class="accordion">
+        <h1>❏ Study Material</h1>
+        
+          <!-- Daily Newspaper Vocabulary -->
+          <div class="accordion-item math">
+            <div class="accordion-title">Daily Newspaper Vocabulary</div>
+            <div class="accordion-content">
+              <ul>
+
+                <!-- Lecture 01 -->
+                <li>
+                  <div class="video-button" onclick="openModal('2tBuPRx3ZzY')">
+                    <span class="lecture-label">🎥 Sheet 01</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a> -->
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a>
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 02 -->
+                <li>
+                  <div class="video-button" onclick="openModal('MEyfiKSX72I')">
+                    <span class="lecture-label">🎥 Sheet 02</span>
+                    <span class="lecture-actions">
+
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a>
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 03 -->
+                <li>
+                  <div class="video-button" onclick="openModal('Buturtq6kts')">
+                    <span class="lecture-label">🎥 Sheet 03</span>
+                    <span class="lecture-actions">
+
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a>
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 04 -->
+                <li>
+                  <div class="video-button" onclick="openModal('9J6GNyniJpk')">
+                    <span class="lecture-label">🎥 Sheet 04</span>
+                    <span class="lecture-actions">
+
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a>
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 05 -->
+                <li>
+                  <div class="video-button" onclick="openModal('z2NZmPkCQvc')">
+                    <span class="lecture-label">🎥 Sheet 05</span>
+                    <span class="lecture-actions">
+
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a>
+                    </span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </div> 
+
+
+
+
+
+
+        <h1>Advance Reading & Newspaper Analysis</h1>
+
+
+         <div class="accordion">  
+
+
+          <!-- English -->
+          <div class="accordion-item english">
+            <div class="accordion-title">English Preli</div>
+            <div class="accordion-content">
+              <ul>
+
+                <!-- Lecture 01 -->
+                <li>
+                  <div class="video-button" onclick="openModal('0bFlenQmhu0')">
+                    <span class="lecture-label">🎥 Lecture 01</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 02 -->
+                <li>
+                  <div class="video-button" onclick="openModal('AYWN4xseTy4')">
+                    <span class="lecture-label">🎥 Lecture 02</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 03 -->
+                <li>
+                  <div class="video-button" onclick="openModal('gFZpBc27NJo')">
+                    <span class="lecture-label">🎥 Lecture 03</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 04 -->
+                <li>
+                  <div class="video-button" onclick="openModal('Xv7cCY01tOw')">
+                    <span class="lecture-label">🎥 Lecture 04</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 05 -->
+                <li>
+                  <div class="video-button" onclick="openModal('pcyOPfSr94Y')">
+                    <span class="lecture-label">🎥 Lecture 05</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 06 -->
+                <li>
+                  <div class="video-button" onclick="openModal('3A2iSU-HtWo')">
+                    <span class="lecture-label">🎥 Lecture 06</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 07 -->
+                <li>
+                  <div class="video-button" onclick="openModal('PVTdndQZ8Wg')">
+                    <span class="lecture-label">🎥 Lecture 07</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 08 -->
+                <li>
+                  <div class="video-button" onclick="openModal('KFombMN8Y2g')">
+                    <span class="lecture-label">🎥 Lecture 08</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li> 
+
+                <!-- Lecture 09 --> 
+                <li>
+                  <div class="video-button" onclick="openModal('mUe6eeIDzQY')">
+                    <span class="lecture-label">🎥 Lecture 09</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 10 -->
+                <li>
+                  <div class="video-button" onclick="openModal('GGrDqhFP20Q')">
+                    <span class="lecture-label">🎥 Lecture 10</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 11 -->
+                <li>
+                  <div class="video-button" onclick="openModal('b2rhOqDHaQ8')">
+                    <span class="lecture-label">🎥 Lecture 11</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 12 -->
+                <li>
+                  <div class="video-button" onclick="openModal('2KyCcQBlay0')">
+                    <span class="lecture-label">🎥 Lecture 12</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 13 -->
+                <li>
+                  <div class="video-button" onclick="openModal('-Pots1HS5S8')">
+                    <span class="lecture-label">🎥 Lecture 13</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 14 -->
+                <li>
+                  <div class="video-button" onclick="openModal('milhfcZUYZA')">
+                    <span class="lecture-label">🎥 Lecture 14</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>
+
+                <!-- Lecture 15 -->
+                <li>
+                  <div class="video-button" onclick="openModal('fco4zD7lLg8')">
+                    <span class="lecture-label">🎥 Lecture 15</span>
+                    <span class="lecture-actions">
+                      <!-- <a href="https://example.com/exam-en1" target="_blank" class="exam-btn">Exam</a>
+                      <a href="https://example.com/sheet-en1.pdf" target="_blank" class="sheet-btn">Sheet</a> -->
+                    </span>
+                  </div>
+                </li>       
+                
+
+              </ul>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+         </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">X</button>
+            <div id="videoContainer"></div>
+          </div>
+        </div>
+
+        <script>
+          const items = document.querySelectorAll('.accordion-item');
+
+          items.forEach(item => {
+            const title = item.querySelector('.accordion-title');
+            const content = item.querySelector('.accordion-content');
+
+            title.addEventListener('click', () => {
+              items.forEach(i => {
+                if (i !== item) {
+                  i.classList.remove('active');
+                  i.querySelector('.accordion-content').style.maxHeight = null;
+                }
+              });
+
+              item.classList.toggle('active');
+
+              if (item.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } else {
+                content.style.maxHeight = null;
+              }
+            });
+          });
+
+          function openModal(videoId) {
+            const iframe = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" allowfullscreen></iframe>`;
+            document.getElementById('videoContainer').innerHTML = iframe;
+            document.getElementById('modal').style.display = 'flex';
+          }
+
+          function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+            document.getElementById('videoContainer').innerHTML = '';
+          }
+
+          // Disable Inspect Shortcut
+          document.onkeydown = function(e) {
+            if (
+              e.key === "F12" || 
+              (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
+              (e.ctrlKey && e.key === "U")
+            ) {
+              return false;
+            }
+          };
+        </script>
+
+
+        <!-- ✅ AUTO MIDPOINT SCROLL SCRIPT -->
+        <script src="marquee-script.js"></script>
+        <!-- ============================================================================================================ -->
+        <!-- ============================================================================================================ -->
+        </div>
+
+    <!-- Include the script.js file -->
+    <script src="script.js"></script>
+    <script src="Scroll-up/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</body>
+</html>
+
+
