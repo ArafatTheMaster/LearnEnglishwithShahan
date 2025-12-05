@@ -31,11 +31,7 @@ function validateForm(event) {
         { username: "admin", password: "Web&CEO@1234", userType: "admin" },
         { username: "user1", password: "111", userType: "free" },
         { username: "user2", password: "222", userType: "free" },
-        { username: "1767560658", password: "1767560658", userType: "admin" },
-        { username: "Sakib42", password: "Hayabusa1300@", userType: "free" },
-        { username: "admin2", password: "AdminPassword2", userType: "admin" },
-        { username: "admin3", password: "AdminPassword3", userType: "admin" },
-        { username: "user3", password: "333", userType: "free" },
+        { username: "Sadia", password: "8@Gmail.comSadia", userType: "admin" },
     ];
 
     var user = validCredentials.find(function (credential) {
@@ -85,4 +81,5 @@ function logout() {
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('userType');
     location.reload();
+
 }
